@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f8ff">
+  <meta name="description" content="Download Bloker, a browser extension for blocking unwanted searches and safer browsing.">
+  <title>Download Bloker Extension</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #17243b;
+      background: #f5f8ff;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-width: 320px;
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 32px 20px;
+      background:
+        radial-gradient(ellipse at 16% 12%, #dceaff 0, transparent 38%),
+        radial-gradient(ellipse at 88% 90%, #d9f4ed 0, transparent 36%),
+        #f5f8ff;
+    }
+
+    main {
+      width: min(100%, 680px);
+      padding: clamp(32px, 7vw, 64px);
+      text-align: center;
+      background: rgb(255 255 255 / 90%);
+      border: 1px solid #e8eef8;
+      border-radius: 28px;
+      box-shadow: 0 24px 70px rgb(34 58 100 / 12%);
+    }
+
+    .brand-mark {
+      width: 68px;
+      height: 68px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 24px;
+      color: #fff;
+      background: linear-gradient(145deg, #3678f6, #2456ce);
+      border-radius: 20px;
+      box-shadow: 0 10px 24px rgb(47 104 225 / 28%);
+    }
+
+    .brand-mark svg {
+      width: 36px;
+      height: 36px;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #3868c8;
+      font-size: 0.78rem;
+      font-weight: 750;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: -0.045em;
+    }
+
+    .description {
+      max-width: 490px;
+      margin: 20px auto 30px;
+      color: #5e6b80;
+      font-size: clamp(1rem, 2.8vw, 1.12rem);
+      line-height: 1.7;
+    }
+
+    .download-button {
+      min-height: 56px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+      padding: 0 26px;
+      color: #fff;
+      background: #2863dc;
+      border: 0;
+      border-radius: 14px;
+      box-shadow: 0 10px 22px rgb(40 99 220 / 24%);
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+    }
+
+    .download-button:hover {
+      background: #1d50bd;
+      box-shadow: 0 13px 26px rgb(40 99 220 / 30%);
+      transform: translateY(-2px);
+    }
+
+    .download-button:focus-visible {
+      outline: 3px solid #91b5ff;
+      outline-offset: 4px;
+    }
+
+    .download-button svg {
+      width: 19px;
+      height: 19px;
+    }
+
+    .note {
+      margin: 18px 0 0;
+      color: #8792a4;
+      font-size: 0.86rem;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        border-radius: 22px;
+      }
+
+      .download-button {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M12 3.2 19 6v5.1c0 4.6-2.9 8.3-7 9.7-4.1-1.4-7-5.1-7-9.7V6l7-2.8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="m8.8 12.2 2.1 2.1 4.5-4.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <p class="eyebrow">Safer browsing starts here</p>
+    <h1>Download Bloker Extension</h1>
+    <p class="description">
+      Block unwanted searches and keep your browsing safer automatically.
+      Download Bloker and take a simple step toward a more comfortable web.
+    </p>
+    <a class="download-button" href="Bloker.zip" download>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 3.8v10.4m0 0 4-4m-4 4-4-4M5 16v3.2h14V16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Download Bloker
+    </a>
+    <p class="note">For Chrome and compatible Chromium-based browsers</p>
+  </main>
+</body>
+</html>
